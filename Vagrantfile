@@ -24,6 +24,17 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt update -y
     sudo apt upgrade -y
-    sudo apt install -y kali-linux-default
+    sudo apt install kali-tools-hardware -y
+    sudo apt install kali-tools-fuzzing -y
+    sudo apt install kali-tools-windows-resources -y
+    sudo apt install kali-tools-vulnerability -y
+    sudo apt install kali-tools-web -y
+    sudo apt install kali-tools-database -y
+    sudo apt install kali-tools-passwords -y
+    sudo apt install kali-tools-reverse-engineering -y
+    sudo apt install kali-tools-exploitation -y
+    sudo apt install kali-tools-sniffing-spoofing -y
+    sudo apt install kali-tools-post-exploitation -y
+    passwd
   SHELL
 end
