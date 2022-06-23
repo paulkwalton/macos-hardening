@@ -9,6 +9,7 @@ brew install vagrant
 brew install docker
 brew install --cask wireshark
 brew install --cask google-chrome
+brew install --cask firefox
 brew install --cask owasp-zap
 brew install --cask burp-suite-professional
 vagrant box add kalilinux/rolling --provider virtualbox
