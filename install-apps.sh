@@ -13,3 +13,4 @@ vagrant box add kalilinux/rolling --provider virtualbox
 mkdir -p vagrant-projects/kali
 cd vagrant-projects/kali
 vagrant init kalilinux/rolling
+vagrant up
