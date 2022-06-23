@@ -8,7 +8,7 @@ brew install vagrant
 brew install --cask wireshark
 brew install --cask google-chrome
 brew install --cask owasp-zap
-brew install --cask burp-suite
+brew install --cask burp-suite-professional
 vagrant box add kalilinux/rolling --provider virtualbox
 mkdir -p vagrant-projects/kali
 cd vagrant-projects/kali
