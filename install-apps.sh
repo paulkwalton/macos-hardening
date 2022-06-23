@@ -5,6 +5,7 @@ brew install --cask virtualbox
 brew install git
 brew install nmap
 brew install vagrant
+brew install docker
 brew install --cask wireshark
 brew install --cask google-chrome
 brew install --cask owasp-zap
