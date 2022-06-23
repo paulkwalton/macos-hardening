@@ -16,5 +16,6 @@ vagrant box add kalilinux/rolling --provider virtualbox
 mkdir -p vagrant-projects/kali
 cd vagrant-projects/kali
 vagrant init kalilinux/rolling
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 read -p "IMPORTANT! You must enable the Virtual Box Plugin Under System Preferences - Security & Privacy - General. Don't proceed until complete"
 vagrant up
