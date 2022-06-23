@@ -17,6 +17,6 @@ mkdir -p vagrant-projects/kali
 cd vagrant-projects/kali
 vagrant init kalilinux/rolling
 rm Vagrantfile
-curl https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/Vagrantfile --O Vagrantfile
+curl https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/Vagrantfile --output Vagrantfile
 read -p "IMPORTANT! You must enable the Virtual Box Plugin Under System Preferences - Security & Privacy - General. Don't proceed until complete"
 vagrant up
