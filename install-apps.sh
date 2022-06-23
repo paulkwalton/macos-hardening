@@ -9,5 +9,5 @@ brew install --cask wireshark
 brew install --cask google-chrome
 brew install --cask owasp-zap
 brew install --cask burp-suite
-
+vagrant box add kalilinux/rolling --provider virtualbox
 
