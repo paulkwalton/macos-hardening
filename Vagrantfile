@@ -3,6 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "kalilinux/rolling"
+  
 
   # Create a forwarded port
   config.vm.network "forwarded_port", guest: 80, host: 8080
@@ -13,7 +14,7 @@ Vagrant.configure("2") do |config|
   # VirtualBox specific settings
   config.vm.provider "virtualbox" do |vb|
     # Hide the VirtualBox GUI when booting the machine
-    vb.gui = false
+    vb.gui = true
 
     # Customize the amount of memory on the VM:
     vb.memory = "4096"
