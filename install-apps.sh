@@ -3,6 +3,7 @@ sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/ma
 softwareupdate -i -a
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install --cask virtualbox
+brew install --cask vmware-fusion
 brew install git
 brew install nmap
 brew install vagrant
