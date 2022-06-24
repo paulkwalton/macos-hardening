@@ -22,6 +22,7 @@ Vagrant.configure("2") do |config|
 
   # Provision the machine with a shell script
   config.vm.provision "shell", inline: <<-SHELL
+    apt remove grub-pc -y
     apt update -y
     apt upgrade -y
     apt install git -y
