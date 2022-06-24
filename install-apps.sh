@@ -6,6 +6,7 @@ brew install --cask virtualbox
 brew install --cask vmware-fusion
 brew install git
 brew install nmap
+brew uninstall vagrant
 brew install vagrant
 brew install docker
 brew install --cask wireshark
