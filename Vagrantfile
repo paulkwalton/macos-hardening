@@ -22,8 +22,8 @@ Vagrant.configure("2") do |config|
 
   # Provision the machine with a shell script
   config.vm.provision "shell", inline: <<-SHELL
-    sudo apt update -y
-    sudo apt upgrade -y
+    apt update -y
+    apt upgrade -y
     apt install git -y
     apt install seclists curl enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
     apt install kali-desktop-xfce -y
