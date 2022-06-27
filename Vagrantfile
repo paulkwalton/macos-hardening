@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
 
   # Provision the machine with a shell script
   config.vm.provision "shell", inline: <<-SHELL
-    apt update -y && apt full-upgrade -y
+    apt-get update -y && apt-get full-upgrade -y
     apt install git -y
     apt install netcat-traditional -y
     apt install powershell  -y
