@@ -14,6 +14,7 @@ brew install --cask firefox
 brew install --cask owasp-zap
 brew install --cask burp-suite-professional
 brew install --cask tenable-nessus-agent
+rm -r vagrant-projects
 vagrant destroy -f
 vagrant box add kalilinux/rolling --provider virtualbox
 mkdir -p vagrant-projects/kali
