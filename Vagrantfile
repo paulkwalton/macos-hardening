@@ -56,5 +56,6 @@ Vagrant.configure("2") do |config|
     gem install evil-winrm
     updatedb
     service postgresql start
+    script /tmp/pentest-output.log
   SHELL
 end
