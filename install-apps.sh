@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/Documents
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/macos_provisioning_script.sh)"
 softwareupdate -i -a
 for i in `vagrant global-status | grep virtualbox | awk '{ print $1 }'` ; do vagrant destroy $i ; done
