@@ -20,11 +20,13 @@ brew install --cask postman
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
 brew install --cask visual-studio
-vagrant box add kalilinux/rolling --provider virtualbox
-mkdir -p vagrant-projects/kali
+sudo shutdown -r now
+
+
+vagrant box add kalilinux/rolling --provider virtualbox;
+mkdir -p vagrant-projects/kali;
 cd vagrant-projects/kali
 vagrant init kalilinux/rolling
 rm Vagrantfile
 curl https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/Vagrantfile --output Vagrantfile
-read -p "IMPORTANT! You must enable the Virtual Box Plugin Under System Preferences - Security & Privacy - General. Don't proceed until complete"
 vagrant up --provision
