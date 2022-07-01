@@ -15,6 +15,7 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask owasp-zap
 brew install --cask burp-suite-professional
+brew install --cask postman
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
 brew install --cask visual-studio
