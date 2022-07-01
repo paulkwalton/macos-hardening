@@ -1,5 +1,5 @@
 #!/bin/bash
-echo #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/run-vagrant)" >> ~/Desktop/runme-after-reboot.sh
+echo -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/run-vagrant)" >> ~/Desktop/runme-after-reboot.sh
 cd ~/Documents
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/macos_provisioning_script.sh)"
 softwareupdate -i -a
