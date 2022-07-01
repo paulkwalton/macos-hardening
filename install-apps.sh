@@ -17,6 +17,7 @@ brew install --cask owasp-zap
 brew install --cask burp-suite-professional
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
+brew install --cask visual-studio
 vagrant box add kalilinux/rolling --provider virtualbox
 mkdir -p vagrant-projects/kali
 cd vagrant-projects/kali
