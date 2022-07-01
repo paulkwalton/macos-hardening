@@ -1,4 +1,5 @@
 #!/bin/bash
+echo #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/run-vagrant)" >> ~/Desktop/runme-after-reboot.sh
 cd ~/Documents
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/macos_provisioning_script.sh)"
 softwareupdate -i -a
@@ -20,7 +21,6 @@ brew install --cask postman
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
 brew install --cask visual-studio
-echo #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/run-vagrant)" >> ~/Desktop/runme-after-reboot.sh
 sudo shutdown -r now
 
 
