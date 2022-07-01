@@ -1,0 +1,7 @@
+vagrant box add kalilinux/rolling --provider virtualbox;
+mkdir -p vagrant-projects/kali;
+cd vagrant-projects/kali
+vagrant init kalilinux/rolling
+rm Vagrantfile
+curl https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/Vagrantfile --output Vagrantfile
+vagrant up --provision
