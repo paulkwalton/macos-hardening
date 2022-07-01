@@ -54,6 +54,7 @@ Vagrant.configure("2") do |config|
     apt install sqlitebrowser -y
     apt install hashid -y
     gem install evil-winrm
+    sudo apt-get update -y
     updatedb
     service postgresql start
     script /tmp/pentest-output.log
