@@ -20,13 +20,8 @@ brew install --cask postman
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
 brew install --cask visual-studio
+echo #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/run-vagrant.sh)" >> runme-after-reboot.sh
 sudo shutdown -r now
 
 
-vagrant box add kalilinux/rolling --provider virtualbox;
-mkdir -p vagrant-projects/kali;
-cd vagrant-projects/kali
-vagrant init kalilinux/rolling
-rm Vagrantfile
-curl https://raw.githubusercontent.com/paulkwalton/macos-hardening/main/Vagrantfile --output Vagrantfile
-vagrant up --provision
+
