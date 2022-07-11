@@ -21,6 +21,7 @@ brew install --cask postman
 brew install --cask tenable-nessus-agent
 brew install --cask microsoft-remote-desktop
 brew install --cask visual-studio
+brew install --cask evernote
 sudo shutdown -r now
 
 
